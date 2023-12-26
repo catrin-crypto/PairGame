@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MenuViewFragment">
+
+    <LinearLayout
+        android:id="@+id/currency_ll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/currency_ll">
+
+        <ImageView
+            android:id="@+id/currency_circle_iv"
+            android:src="@drawable/coin_shape"
+            style="@style/currency_iv" />
+
+        <TextView
+            android:id="@+id/total_coins"
+            tools:text="100"
+            style="@style/currency_tv" />
+    </LinearLayout>
+
+<LinearLayout
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    style="@style/logo_playbtn_ll">
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:src="@drawable/game_logo_24"
+        style="@style/game_logo_image_view" />
+
+    <Button
+        android:id="@+id/play_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/play_btn_layout_margin"
+        android:textSize="@dimen/menu_screen_textsize"
+        android:paddingStart="@dimen/play_btn_padding_start"
+        android:paddingEnd="@dimen/play_btn_padding_end"
+        android:backgroundTint="@color/purple_btn_background"
+        android:textColor="@color/white"
+        android:text="@string/play_btn_text" />
+</LinearLayout>
+
+    <ImageButton
+        android:id="@+id/privacy_policy_btn"
+        android:contentDescription="@string/policy_image_btn_description"
+        android:src="@drawable/privacy_tip_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/privacy_policy_image_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

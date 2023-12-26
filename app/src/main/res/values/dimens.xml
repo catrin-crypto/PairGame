@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="currency_ll_layout_margin">10dp</dimen>
+    <dimen name="coin_iv_margin_end">4dp</dimen>
+    <dimen name="menu_screen_textsize">17sp</dimen>
+    <dimen name="logo_iv_layout_margin">10dp</dimen>
+    <dimen name="logo_iv_padding_start">30dp</dimen>
+    <dimen name="logo_iv_padding_end">30dp</dimen>
+    <dimen name="play_btn_layout_margin">10dp</dimen>
+    <dimen name="play_btn_padding_start">40dp</dimen>
+    <dimen name="play_btn_padding_end">40dp</dimen>
+</resources>

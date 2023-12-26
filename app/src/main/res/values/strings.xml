@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pair Game</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play_btn_text">PLAY</string>
+    <string name="policy_image_btn_description">privacy policy button</string>
+    <string name="less_time_more_reward_tv">! less time, more reward</string>
+    <string name="pair_game_description_tv">Keep matching up two of the same object until there are no more to be paired and you clear the board.</string>
+    <string name="congratulation_tv_text">CONGRATULATION!</string>
+    <string name="you_won_tv_text">Great! You won.</string>
+    <string name="reward_btn_text">Double Reward</string>
+    <string name="home_button">home button</string>
+</resources>

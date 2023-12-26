@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/menu_fragment">
+    <fragment
+        android:id="@+id/menu_fragment"
+        android:name="catrin.dev.pairgame.presentation.MenuViewFragment"
+        android:label="menu_view_fragment_title"
+        tools:layout="@layout/fragment_menu_view" >
+        <action
+            android:id="@+id/action_menu_fragment_to_game_scene_fragment"
+            app:destination="@id/game_scene_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/game_scene_fragment"
+        android:name="catrin.dev.pairgame.presentation.GameSceneFragment"
+        android:label="game_scene_fragment_title"
+        tools:layout="@layout/fragment_game_scene" >
+        <action
+            android:id="@+id/action_game_scene_fragment_to_game_over_fragment"
+            app:destination="@id/game_over_fragment" />
+        <action
+            android:id="@+id/action_game_scene_fragment_to_menu_fragment"
+            app:destination="@id/menu_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/game_over_fragment"
+        android:name="catrin.dev.pairgame.presentation.GameOverFragment"
+        android:label="game_over_fragment_title"
+        tools:layout="@layout/fragment_game_over" >
+        <action
+            android:id="@+id/action_game_over_fragment_to_menu_fragment"
+            app:destination="@id/menu_fragment"
+            app:popUpTo="@id/menu_fragment"/>
+    </fragment>
+</navigation>

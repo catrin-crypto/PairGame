@@ -1,0 +1,166 @@
+<resources>
+
+    <style name="Widget.Theme.PairGame.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+<!--Menu Fragment styles-->
+
+    <style name="privacy_policy_image_btn">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/policy_btn_shape</item>
+    </style>
+
+    <style name="game_logo_image_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/logo_iv_layout_margin</item>
+        <item name="android:background">@drawable/logo_background</item>
+        <item name="android:paddingStart">@dimen/logo_iv_padding_start</item>
+        <item name="android:paddingEnd">@dimen/logo_iv_padding_end</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="logo_playbtn_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="currency_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/menu_screen_textsize</item>
+    </style>
+
+    <style name="currency_iv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/coin_iv_margin_end</item>
+    </style>
+
+    <style name="currency_ll">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/currency_ll_layout_margin</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+<!--    Game Scene Fragment styles-->
+    <style name="timer_coins_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <style name="timer_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:background">@drawable/policy_btn_shape</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="coins_tv">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">70dp</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="under_timer_hint_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="game_grid_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:useDefaultMargins">true</item>
+        <item name="android:animateLayoutChanges">true</item>
+    </style>
+
+    <style name="game_description_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+<!--    Game Over Fragment styles-->
+    <style name="prize_image_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="congratulation_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="you_won_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="coins_per_game_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingStart">60dp</item>
+        <item name="android:paddingEnd">60dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/policy_btn_shape</item>
+    </style>
+
+    <style name="buttons_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="double_reward_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/purple_btn_background</item>
+    </style>
+
+    <style name="home_image_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/policy_btn_shape</item>
+        <item name="android:contentDescription">@string/home_button</item>
+    </style>
+
+</resources>

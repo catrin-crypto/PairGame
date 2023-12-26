@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.GameSceneFragment">
+
+    <LinearLayout
+        android:id="@+id/timer_coins_ll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/timer_coins_ll">
+        <TextView
+            android:id="@+id/timer"
+            app:drawableStartCompat="@drawable/timer_24"
+            android:gravity="center"
+            style="@style/timer_tv" />
+
+        <TextView
+            android:id = "@+id/coins"
+            tools:text="100"
+            app:drawableStartCompat="@drawable/coin_shape"
+            style="@style/coins_tv" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timer_hint_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timer_coins_ll"
+        android:text="@string/less_time_more_reward_tv"
+        style="@style/under_timer_hint_tv" />
+
+    <GridLayout
+        android:id="@+id/game_grid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/description_tv"
+        app:layout_constraintTop_toBottomOf="@id/timer_hint_tv"
+        style="@style/game_grid_layout">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            <ImageView-->
+<!--                android:id="@+id/autofill_iv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/game_card_background"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"/>-->
+<!--            <ImageView-->
+<!--                android:id="@+id/back_card"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/game_card_background"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"/>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    </GridLayout>
+
+<TextView
+    android:id="@+id/description_tv"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:text="@string/pair_game_description_tv"
+    style="@style/game_description_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

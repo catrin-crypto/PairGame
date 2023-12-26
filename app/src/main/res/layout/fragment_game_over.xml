@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.GameOverFragment">
+<ImageView
+    tools:src="@drawable/events_24"
+    android:id="@+id/win_prize_iv"
+    style="@style/prize_image_view" />
+
+   <TextView
+        android:id="@+id/congratulation_tv"
+       android:text="@string/congratulation_tv_text"
+       style="@style/congratulation_tv" />
+   <TextView
+        android:id="@+id/you_won_tv"
+       android:text="@string/you_won_tv_text"
+       style="@style/you_won_tv" />
+   <TextView
+        android:id="@+id/coins_earned"
+       tools:text="100"
+       app:drawableLeftCompat="@drawable/coin_shape"
+       style="@style/coins_per_game_tv" />
+
+   <LinearLayout style="@style/buttons_ll">
+
+      <Button
+          android:text="@string/reward_btn_text"
+          style="@style/double_reward_btn" />
+
+      <ImageButton
+          android:id="@+id/home_btn"
+          android:src="@drawable/ic_home_btn"
+          style="@style/home_image_btn" />
+   </LinearLayout>
+
+</LinearLayout>
